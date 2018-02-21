@@ -1,13 +1,26 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import bulma from '../node_modules/bulma/css/bulma.css';
+import { NavLink } from 'react-router-dom';
+import Login from './View/Login';
 
 class App extends Component {
-  
+
   render() {
     return (
-      <h1>Hello, world</h1>
+      <div>
+        <nav className="navbar is-success" role="navigation">
+          <div className="container">
+            <div className="navbar-brand">
+              <NavLink exact to="/" className="navbar-item">
+              <h1 className="has-text-weight-bold is-size-4">Registration System</h1>
+              </NavLink>
+            </div>
+          </div>
+        </nav>
+      <Login />  
+      </div>
     );
   }
 }
+
 export default App;
