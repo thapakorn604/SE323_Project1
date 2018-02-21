@@ -2,24 +2,23 @@ import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
 import { Button } from 'reactbulma'
 
-class AdminNav extends Component {
+class StudentNav extends Component {
     constructor(props) {
-        super(props)
+        super(props);
         this.state = {}
-
-        this.handleLogout = this.handleLogout.bind(this)
     }
 
-    handleLogout() {
-        window.location.replace("/admin")
+    handleLogout(){
+        window.location.replace('/')
     }
+
     render() {
         return (
             <div>
                 <nav className="navbar is-success" role="navigation">
                     <div className="container">
                         <div className="navbar-brand">
-                            <NavLink exact to="/admin/index" className="navbar-item">
+                            <NavLink exact to="/student/index" className="navbar-item">
                                 <h1 className="has-text-weight-bold is-size-4">Registration System</h1>
                             </NavLink>
                             <div className="navbar-burger" id="collaspe" data-target="menu">
@@ -30,8 +29,8 @@ class AdminNav extends Component {
                         </div>
                         <div className="navbar-menu" id="menu">
                             <div className="navbar-start">
-                                <NavLink to="/admin/addcourse" activeClassName="is-active" className="navbar-item">Add Course</NavLink>
-                                <NavLink to="/admin/manage" activeClassName="is-active" className="navbar-item">Semester Management</NavLink>
+                                <NavLink to="/admin/addcourse" activeClassName="is-active" className="navbar-item">Enroll</NavLink>
+                                <NavLink to="/admin/manage" activeClassName="is-active" className="navbar-item">Lab Reserve</NavLink>
                             </div>
                             <div className="navbar-end">
                                 <div className="navbar-item">
@@ -45,5 +44,5 @@ class AdminNav extends Component {
         )
     }
 }
-export default AdminNav;
 
+export default StudentNav;

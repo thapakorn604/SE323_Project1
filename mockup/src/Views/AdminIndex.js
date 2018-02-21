@@ -6,7 +6,7 @@ class AdminIndex extends Component {
     return (
       <div>
         <AdminNav />
-      </div>  
+      </div>
     )
   }
 }
