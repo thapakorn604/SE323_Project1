@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
 import { Card, Field, Container } from "reactbulma"
 import Style from './style.css'
 import EmptyNav from './EmptyNav'
@@ -21,7 +20,7 @@ class Login extends Component {
     }
     handleSignIn() {
         let checker = this.state.type
-        checker == 'Student' ? window.location.replace('/student/index') : window.location.replace('/lecturer/index')
+        checker === 'Student' ? window.location.replace('/student/index') : window.location.replace('/lecturer/index')
     }
 
     render() {

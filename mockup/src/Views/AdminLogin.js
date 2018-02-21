@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
 import { Card, Field, Container } from "reactbulma"
 import Style from './style.css'
 import EmptyNav from './EmptyNav'
@@ -36,7 +35,7 @@ class AdminLogin extends Component {
                     <Card className="is-padding">
                         <Container fluid>
                             <Field>
-                                <label class="label">Idendity</label>
+                                <label class="label">Identity</label>
                                 <div class="control">
                                     <input className="input" type="text" placeholder="Admin ID e.g.582115015"></input>
                                 </div>
