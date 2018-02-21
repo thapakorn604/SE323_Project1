@@ -8,7 +8,7 @@ class AdminLogin extends Component {
         super(props)
 
         this.state = {
-            type : "Student"
+            type : "Admin"
         }
         this.handleSignIn = this.handleSignIn.bind(this)
     }
