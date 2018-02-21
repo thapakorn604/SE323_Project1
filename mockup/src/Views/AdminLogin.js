@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import {Card,Field,Container} from "reactbulma"
 import Style from './style.css'
+import EmptyNav from './EmptyNav'
 
 class AdminLogin extends Component {
     constructor(props){
@@ -17,12 +18,13 @@ class AdminLogin extends Component {
             this.setState({type : event.target.value})
         }
         handleSignIn(){
-            alert(this.state.type)
+            window.location.replace("/admin/index")
         }
 
     render (){
         return (
             <div>
+            <EmptyNav />
                 <div className="column is-half is-offset-one-quarter">    
                     <Card>
                         <div className="authen">
