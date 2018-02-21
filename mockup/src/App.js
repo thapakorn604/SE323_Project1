@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import bulma from '../node_modules/bulma/css/bulma.css';
-import { NavLink } from 'react-router-dom';
-import Login from './View/Login';
+import React, { Component } from 'react'
+import bulma from '../node_modules/bulma/css/bulma.css'
+import { NavLink } from 'react-router-dom'
+import Login from './View/Login'
 
 class App extends Component {
 
@@ -19,7 +19,7 @@ class App extends Component {
         </nav>
       <Login />  
       </div>
-    );
+    )
   }
 }
 

@@ -1,16 +1,26 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import {Card,Field,Container} from "reactbulma";
-import Style from './style.css';
+import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
+import {Card,Field,Container} from "reactbulma"
+import Style from './style.css'
 
 class Login extends Component {
     constructor(props){
         super(props)
 
         this.state = {
-            type : ""
+            type : "Student"
         }
+
+        this.handleChange = this.handleChange.bind(this)
+        this.handleSignIn = this.handleSignIn.bind(this)
     }
+
+        handleChange(event){
+            this.setState({type : event.target.value})
+        }
+        handleSignIn(){
+            alert(this.state.type)
+        }
 
     render (){
         return (
@@ -41,16 +51,16 @@ class Login extends Component {
                             <label className="label">Position</label>
                                 <div className="control">
                                     <div className="select">
-                                    <select>
-                                        <option>Student</option>
-                                        <option>Lecturer</option>
+                                    <select defaultValue={this.state.type} onChange={this.handleChange}>
+                                        <option value="Student">Student</option>
+                                        <option value="Lecturer">Lecturer</option>
                                     </select>
                                     </div>
                                 </div>
                           </Field>
                           <Field groupedCentered>
                           <div class="control">
-                            <button class="button is-primary">Sign in</button>
+                            <button class="button is-primary" onClick={this.handleSignIn}>Sign in</button>
                           </div>
                           <div class="control">
                             <button class="button is-text">Cancel</button>
