@@ -23,7 +23,7 @@ class Login extends Component {
         }
 
     render (){
-        return (
+        return ( 
             <div>
                 <div className="column is-half is-offset-one-quarter">    
                     <Card>

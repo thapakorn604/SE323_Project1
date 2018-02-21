@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import {Card,Field,Container} from "reactbulma"
 import Style from './style.css'
-import EmptyNav from './EmptyNav'
+
 class AdminLogin extends Component {
     constructor(props){
         super(props)
