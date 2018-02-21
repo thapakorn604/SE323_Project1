@@ -11,5 +11,5 @@ const AppRouter = () => (
   </BrowserRouter>
 )
 
-ReactDOM.render(<AppRouter/>, document.getElementById('root'));
+ReactDOM.render(<AppRouter />, document.getElementById('root'));
 registerServiceWorker();
