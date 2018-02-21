@@ -7,6 +7,6 @@ Term Project 1 SE 323 Software Construction, Testing and Maintenance
 3. mockup source code
 
 # GET STARTED
-1.Node Package Management is required to install all dependencies.
-2.After finish installing all dependencies, change directory to repository folder.
-3.Now, This project can be executed.
+1. Node Package Management is required to install all dependencies.
+2. After finish installing all dependencies, change directory to repository folder.
+3. Now, This project can be executed.
