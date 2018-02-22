@@ -1,15 +1,16 @@
 import React, { Component } from 'react'
+import LecturerNav from '../Views/LecturerNav'
 
 class LecturerIndex extends Component {
     constructor(props) {
         super(props);
-        this.state = {  }
+        this.state = {}
     }
-    render() { 
-        return ( 
-            <h1>Hello, I am lecturer</h1>
-         )
+    render() {
+        return (
+            <LecturerNav />
+        )
     }
 }
- 
+
 export default LecturerIndex;

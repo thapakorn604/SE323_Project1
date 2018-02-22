@@ -2,12 +2,13 @@ import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
 import { Button } from 'reactbulma'
 
-class StudentNav extends Component {
+class LecturerNav extends Component {
     constructor(props) {
         super(props);
         this.state = {}
-    }
 
+        this.handleLogout = this.handleLogout.bind(this)
+    }
     handleLogout(){
         window.location.replace('/')
     }
@@ -18,7 +19,7 @@ class StudentNav extends Component {
                 <nav className="navbar is-success" role="navigation">
                     <div className="container">
                         <div className="navbar-brand">
-                            <NavLink exact to="/student/index" className="navbar-item">
+                            <NavLink exact to="/lecturer/index" className="navbar-item">
                                 <h1 className="has-text-weight-bold is-size-4">Registration System</h1>
                             </NavLink>
                             <div className="navbar-burger" id="collaspe" data-target="menu">
@@ -29,8 +30,8 @@ class StudentNav extends Component {
                         </div>
                         <div className="navbar-menu" id="menu">
                             <div className="navbar-start">
-                                <NavLink to="/admin/addcourse" activeClassName="is-active" className="navbar-item">Enroll Courses</NavLink>
-                                <NavLink to="/admin/manage" activeClassName="is-active" className="navbar-item">Payment</NavLink>
+                                <NavLink to="/admin/addcourse" activeClassName="is-active" className="navbar-item">My courses</NavLink>
+                                <NavLink to="/admin/manage" activeClassName="is-active" className="navbar-item">History</NavLink>
                             </div>
                             <div className="navbar-end">
                                 <div className="navbar-item">
@@ -45,4 +46,4 @@ class StudentNav extends Component {
     }
 }
 
-export default StudentNav;
+export default LecturerNav;
