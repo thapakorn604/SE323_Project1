@@ -13,74 +13,27 @@ class LecturerIndexTable extends React.Component {
                 <th>No.</th>
                 <th>Course ID</th>
                 <th>Course Name</th>
-                <th>Student(s)</th>
+                <th>Date</th>
+                <th>Time</th>
                 <th>Credit(s)</th>
-                <th className="has-text-centered">Grade</th>
-                <th></th>
             </tr>
             <tr>
                 <td>1</td>
-                <td>953231</td>
-                <td>Object-Oriented Programming</td>
-                <td>John Smith</td>
-                <td>3</td>
-                <td><input className="input" type="text" placeholder="Text input"></input></td>
-                <td><input className="button" type="submit" value="Save"></input></td>
+                <td>953102</td>
+                <td>ADT and Problem solving</td>
+                <td>Monday, Thursday</td>
+                <td>09.30-12.00</td>
+                <td>3</td> 
             </tr>
             <tr>
                 <td>2</td>
-                <td>953232</td>
-                <td>Object-Oriented Analysis and Design</td>
-                <td>John Smith</td>
-                <td>3</td>
-                <td><input className="input" type="text" placeholder="Text input"></input></td>
-                <td><input className="button" type="submit" value="Save"></input></td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>953232</td>
-                <td>Object-Oriented Analysis and Design</td>
-                <td>Tom Smith</td>
-                <td>3</td>
-                <td><input className="input" type="text" placeholder="Text input"></input></td>
-                <td><input className="button" type="submit" value="Save"></input></td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>953231</td>
-                <td>Object-Oriented Programming</td>
-                <td>John Smith</td>
-                <td>3</td>
-                <td><input className="input" type="text" placeholder="Text input"></input></td>
-                <td><input className="button" type="submit" value="Save"></input></td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>953231</td>
-                <td>Object-Oriented Programming</td>
-                <td>John Smith</td>
-                <td>3</td>
-                <td><input className="input" type="text" placeholder="Text input"></input></td>
-                <td><input className="button" type="submit" value="Save"></input></td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>953231</td>
-                <td>Object-Oriented Programming</td>
-                <td>John Smith</td>
-                <td>3</td>
-                <td><input className="input" type="text" placeholder="Text input"></input></td>
-                <td><input className="button" type="submit" value="Save"></input></td>
+                <td>953212</td>
+                <td>Database system and design</td>
+                <td>Tuesday, Friday</td>
+                <td>12.30-14.30</td>
+                <td>3</td> 
             </tr>
         </table>
-        <div className="field is-grouped is-grouped-centered">
-            <p className="control">
-                <a className="button is-primary">Save All</a>
-            </p>
-            <p className="control">
-                <a className="button is-light">Clear</a>
-            </p>
-        </div>
     </div>
   }
 }
