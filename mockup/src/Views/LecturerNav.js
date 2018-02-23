@@ -30,8 +30,8 @@ class LecturerNav extends Component {
                         </div>
                         <div className="navbar-menu" id="menu">
                             <div className="navbar-start">
-                                <NavLink to="/admin/addcourse" activeClassName="is-active" className="navbar-item">My courses</NavLink>
-                                <NavLink to="/admin/manage" activeClassName="is-active" className="navbar-item">History</NavLink>
+                                <NavLink to="/lecturer/courses" activeClassName="is-active" className="navbar-item">My courses</NavLink>
+                                <NavLink to="/lecturer/history" activeClassName="is-active" className="navbar-item">History</NavLink>
                             </div>
                             <div className="navbar-end">
                                 <div className="navbar-item">

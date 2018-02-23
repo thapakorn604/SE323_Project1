@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import {Link} from 'react-router-dom'
 
 class AdminIndexTable extends Component {
     constructor(props) {
@@ -67,7 +68,7 @@ class AdminIndexTable extends Component {
                 </tr>                 
             </table>
             <div className="has-text-right">
-                <p>more...</p>
+            <Link to="#">more...</Link>
             </div>
             </div>
          )

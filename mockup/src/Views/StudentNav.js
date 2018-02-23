@@ -29,8 +29,9 @@ class StudentNav extends Component {
                         </div>
                         <div className="navbar-menu" id="menu">
                             <div className="navbar-start">
-                                <NavLink to="/admin/addcourse" activeClassName="is-active" className="navbar-item">Enroll Courses</NavLink>
-                                <NavLink to="/admin/manage" activeClassName="is-active" className="navbar-item">Payment</NavLink>
+                                <NavLink to="/student/enroll" activeClassName="is-active" className="navbar-item">Enroll Courses</NavLink>
+                                <NavLink to="/student/payment" activeClassName="is-active" className="navbar-item">Payment</NavLink>
+                                <NavLink to="/student/transcript" activeClassName="is-active" className="navbar-item">My Transcript</NavLink>
                             </div>
                             <div className="navbar-end">
                                 <div className="navbar-item">
