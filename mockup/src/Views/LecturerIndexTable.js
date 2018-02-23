@@ -59,6 +59,14 @@ class LecturerIndexTable extends React.Component {
                 <td><input class="button" type="submit" value="Save"></input></td>
             </tr>
         </table>
+        <div class="field is-grouped is-grouped-centered">
+            <p class="control">
+                <a class="button is-light">Clear</a>
+            </p>
+            <p class="control">
+                <a class="button is-primary">Save all</a>
+            </p>
+        </div>
     </div>
   }
 }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import LecturerNav from '../Views/LecturerNav'
 import LecturerIndexTable from './LecturerIndexTable'
+import user from '../Images/user.png'
 
 class LecturerIndex extends Component {
     constructor(props) {
@@ -14,8 +15,18 @@ class LecturerIndex extends Component {
     <section className="section">
     <div className = "container">
       <div className="columns">
-
           <div className="column is-one-fifth">
+            <div className="card-content is-flex is-horizontal-center">
+                <figure className="image is-128x128">
+                    <img src={user} />
+                </figure>
+            </div>            
+            <div className="has-text-centered">
+                <p><strong>Dr. Thapayang Wangwang</strong></p>
+                <p><strong>Faculty : </strong>College of Art, Media and Technology</p>
+                <p><strong>Major : </strong>Software Engineering</p>
+                <hr/>
+            </div>
               <nav className="panel">
                 <p className="panel-heading">Repositories</p>
                   <div className="panel-block">
