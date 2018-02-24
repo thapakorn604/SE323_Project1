@@ -35,16 +35,18 @@ class StudentIndex extends Component {
                             </div>
                             <div class="tile is-parent">
                                 <div class="tile is-child box">
-                                    <h1 className="is-size-4 has-text-weight-bold">Schedule</h1>
+                                    <h1 className="is-size-4 has-text-weight-bold">What's new ?</h1>
                                     <div className="content">
-                                        <h3>Midterm examination</h3>
                                         <ul>
-                                            <li>952313 : 1st March 2018, 15.00-18.00</li>
-                                            <li>208255 : 6th March 2018, 15.00-18.00</li>
-                                            <li>953201 : 28th February 2018, 8.00-11.00</li>
-                                            <li>001202 : 28th February 2018, 15.00-18.00</li>
-                                            <li>207110 : 2nd March2018, 12.00-15.00</li>
-                                            <li>751100 : 3rd March2018, 12.00-15.00</li>
+                                            <li><a>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+                                            <li><a> Integer eu sagittis augue, sed suscipit felis. Curabitur rutrum ligula eu sem viverra aliquam.</a></li>
+                                            <li><a>Duis vel quam at lacus varius commodo. Ut tortor purus, gravida ut nibh vitae, suscipit blandit sapien.</a></li>
+                                            <li><a>Aliquam et diam blandit, gravida diam in, tincidunt elit.</a></li>
+                                            <li><a>Etiam ac ante pellentesque, tempor quam non, porttitor ipsum. </a></li>
+                                            <li><a>Nullam eu justo ultrices, dictum tellus sit amet, fringilla eros.</a></li>
+                                            <li><a>Proin ultrices lacinia nisi, eu rhoncus sapien consectetur in.</a></li>
+                                            <li><a>Donec ornare, sapien ut fringilla tincidunt, ligula ex lobortis ex, sit amet pretium nunc ex sodales magna.</a></li>
+                                            <li><a>Proin maximus convallis nibh et suscipit.</a></li>
                                         </ul>
                                         <br />
                                     </div>
