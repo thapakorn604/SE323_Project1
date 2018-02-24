@@ -16,9 +16,9 @@ class StudentIndex extends Component {
                 <StudentNav />
                 <section className="section">
                     <div className="container">
-                        <div class="tile is-ancestor">
-                            <div class="tile is-4 is-vertical is-parent">
-                                <div class="tile is-child box">
+                        <div className="tile is-ancestor">
+                            <div className="tile is-4 is-vertical is-parent">
+                                <div className="tile is-child box">
                                     <div className="card-content is-flex is-horizontal-center">
                                         <figure className="image is-128x128">
                                             <img src={user} />
