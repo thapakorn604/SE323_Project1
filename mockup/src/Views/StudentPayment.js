@@ -16,7 +16,7 @@ class StudentPayment extends Component {
                 <StudentNav />
             <section className="section">
             <Box>
-            <h1 className="has-text-centered is-size-4 has-text-weight-bold">Tuition fee Conclusion</h1>
+            <h1 className="has-text-centered is-size-4 has-text-weight-bold">Tuition fee Summary</h1>
                 <hr/>
                 <div className="content has-text-centered">
                 <p className="is-inline has-text-weight-bold is-size-5">Name: </p> 
