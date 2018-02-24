@@ -12,10 +12,13 @@ class StudentEnrolledTable extends Component {
     }
 
     handleWithdraw(){
-        document.getElementById("c7").hidden="true"
-        this.setState ({
-            allcredit : '18'
-        })
+        if(window.confirm('Are you sure to withdraw this course ?')==true)
+		{
+            document.getElementById("c7").hidden="true"
+            this.setState ({
+                allcredit : '18'
+            })
+		}
     }
     render() { 
         return ( 
