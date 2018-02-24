@@ -1,9 +1,21 @@
 import React, { Component } from 'react'
+import {Button} from 'reactbulma'
 
 class StudentEnrolledTable extends Component {
     constructor(props) {
         super(props);
-        this.state = {  }
+        this.state = { 
+            allcredit : '19'
+         }
+
+        this.handleWithdraw = this.handleWithdraw.bind(this)
+    }
+
+    handleWithdraw(){
+        document.getElementById("c7").hidden="true"
+        this.setState ({
+            allcredit : '18'
+        })
     }
     render() { 
         return ( 
@@ -27,6 +39,7 @@ class StudentEnrolledTable extends Component {
                             <td>TBA</td>
                             <td>Dr.Passakorn Pannachitta</td>
                             <td>3</td>
+                            <Button danger>Withdraw</Button>
                         </tr>  
                         <tr>
                             <td>2</td>
@@ -36,6 +49,7 @@ class StudentEnrolledTable extends Component {
                             <td>9.30 - 11.00</td>
                             <td>Lect.Morakot Intanon</td>
                             <td>3</td>
+                            <Button danger>Withdraw</Button>
                         </tr>
                         <tr>
                             <td>3</td>
@@ -45,6 +59,7 @@ class StudentEnrolledTable extends Component {
                             <td>14.00 - 17.00</td>
                             <td>Dr.Pattama Longani</td>
                             <td>3</td>
+                            <Button danger>Withdraw</Button>
                         </tr>
                         <tr>
                             <td>4</td>
@@ -54,6 +69,7 @@ class StudentEnrolledTable extends Component {
                             <td>8.00 - 9.30</td>
                             <td>Pierre Yanofsky</td>
                             <td>3</td>
+                            <Button danger>Withdraw</Button>
                         </tr>
                         <tr>
                             <td>5</td>
@@ -63,6 +79,7 @@ class StudentEnrolledTable extends Component {
                             <td>9.30 - 11.00</td>
                             <td>Lect.Krit Sriphomsett, Lect.Prakarn Unachak</td>
                             <td>3</td>
+                            <Button danger>Withdraw</Button>
                         </tr>
                         <tr>
                             <td>6</td>
@@ -72,8 +89,9 @@ class StudentEnrolledTable extends Component {
                             <td>12.30 - 14.00</td>
                             <td>Lect.Rossasin Tangpolponsawasdi</td>
                             <td>3</td>
+                            <Button danger>Withdraw</Button>
                         </tr>
-                        <tr>
+                        <tr id="c7">
                             <td>7</td>
                             <td>057128</td>
                             <td>Tennis for Life and Exercise</td>
@@ -81,6 +99,7 @@ class StudentEnrolledTable extends Component {
                             <td>17.00 - 18.00</td>
                             <td>Lect.Pakorn Tuisri</td>
                             <td>1</td>
+                            <Button danger onClick={this.handleWithdraw}>Withdraw</Button>
                         </tr> 
                         <tr>
                             <th></th>
@@ -89,7 +108,7 @@ class StudentEnrolledTable extends Component {
                             <th></th>
                             <th></th>
                             <th>All credits</th>
-                            <th>19</th>
+                            <th>{this.state.allcredit}</th>
                         </tr>                         
                 </table>
          )

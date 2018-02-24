@@ -7,6 +7,7 @@ import StudentIndex from '../Views/StudentIndex'
 import NotFound from '../Views/NotFound'
 import LecturerIndex from '../Views/LecturerIndex';
 import StudentTranscript from '../Views/StudentTranscript';
+import StudentPayment from '../Views/StudentPayment';
 
 
 export default () => (
@@ -16,6 +17,7 @@ export default () => (
     <Route exact path="/admin/index" component={AdminIndex} />
     <Route exact path="/student/index" component={StudentIndex} />
     <Route exact path="/student/transcript" component={StudentTranscript} />
+    <Route exact path="/student/payment" component={StudentPayment} />
     <Route exact path="/lecturer/index" component={LecturerIndex} />
     <Route component={NotFound} />
   </Switch>
