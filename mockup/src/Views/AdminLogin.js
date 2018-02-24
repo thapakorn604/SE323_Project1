@@ -24,6 +24,7 @@ class AdminLogin extends Component {
         return (
             <div>
                 <EmptyNav />
+                <div className="section">
                 <div className="column is-half is-offset-one-quarter">
                     <Card>
                         <div className="authen">
@@ -56,6 +57,7 @@ class AdminLogin extends Component {
                             </Field>
                         </Container>
                     </Card>
+                </div>
                 </div>
             </div>
         )
