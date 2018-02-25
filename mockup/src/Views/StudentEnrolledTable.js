@@ -32,6 +32,7 @@ class StudentEnrolledTable extends Component {
                             <th>Time</th>
                             <th>Lecturer(s)</th>
                             <th>Credit(s)</th>
+                            <th></th>
                         </tr>
                     </thead>
                         <tr>
@@ -42,7 +43,7 @@ class StudentEnrolledTable extends Component {
                             <td>TBA</td>
                             <td>Dr.Passakorn Pannachitta</td>
                             <td>3</td>
-                            <Button danger>Withdraw</Button>
+                            <td><Button danger>Withdraw</Button></td>
                         </tr>  
                         <tr>
                             <td>2</td>
@@ -52,7 +53,7 @@ class StudentEnrolledTable extends Component {
                             <td>9.30 - 11.00</td>
                             <td>Lect.Morakot Intanon</td>
                             <td>3</td>
-                            <Button danger>Withdraw</Button>
+                            <td><Button danger>Withdraw</Button></td>
                         </tr>
                         <tr>
                             <td>3</td>
@@ -62,7 +63,7 @@ class StudentEnrolledTable extends Component {
                             <td>14.00 - 17.00</td>
                             <td>Dr.Pattama Longani</td>
                             <td>3</td>
-                            <Button danger>Withdraw</Button>
+                            <td><Button danger>Withdraw</Button></td>
                         </tr>
                         <tr>
                             <td>4</td>
@@ -72,7 +73,7 @@ class StudentEnrolledTable extends Component {
                             <td>8.00 - 9.30</td>
                             <td>Pierre Yanofsky</td>
                             <td>3</td>
-                            <Button danger>Withdraw</Button>
+                            <td><Button danger>Withdraw</Button></td>
                         </tr>
                         <tr>
                             <td>5</td>
@@ -82,7 +83,7 @@ class StudentEnrolledTable extends Component {
                             <td>9.30 - 11.00</td>
                             <td>Lect.Krit Sriphomsett, Lect.Prakarn Unachak</td>
                             <td>3</td>
-                            <Button danger>Withdraw</Button>
+                            <td><Button danger>Withdraw</Button></td>
                         </tr>
                         <tr>
                             <td>6</td>
@@ -92,7 +93,7 @@ class StudentEnrolledTable extends Component {
                             <td>12.30 - 14.00</td>
                             <td>Lect.Rossasin Tangpolponsawasdi</td>
                             <td>3</td>
-                            <Button danger>Withdraw</Button>
+                            <td><Button danger>Withdraw</Button></td>
                         </tr>
                         <tr id="c7">
                             <td>7</td>
@@ -102,7 +103,7 @@ class StudentEnrolledTable extends Component {
                             <td>17.00 - 18.00</td>
                             <td>Lect.Pakorn Tuisri</td>
                             <td>1</td>
-                            <Button danger onClick={this.handleWithdraw}>Withdraw</Button>
+                            <td><Button danger onClick={this.handleWithdraw}>Withdraw</Button></td>
                         </tr> 
                         <tr>
                             <th></th>
@@ -112,6 +113,7 @@ class StudentEnrolledTable extends Component {
                             <th></th>
                             <th>All credits</th>
                             <th>{this.state.allcredit}</th>
+                            <th></th>
                         </tr>                         
                 </table>
          )

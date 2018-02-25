@@ -25,7 +25,7 @@ class StudentAddCourseTable extends Component {
                             <th>Time</th>
                             <th>Seat(s)</th>
                             <th>Enrolled(s)</th>
-                            <th>Add Course</th>
+                            <th></th>
                         </tr>
                     </thead>
                     <tr>
