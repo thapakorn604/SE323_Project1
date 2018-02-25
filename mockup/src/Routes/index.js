@@ -6,6 +6,8 @@ import AdminIndex from '../Views/AdminIndex'
 import StudentIndex from '../Views/StudentIndex'
 import NotFound from '../Views/NotFound'
 import LecturerIndex from '../Views/LecturerIndex';
+import grading from '../Views/grading';
+import history from '../Views/history';
 
 
 export default () => (
@@ -15,6 +17,8 @@ export default () => (
     <Route exact path="/admin/index" component={AdminIndex} />
     <Route exact path="/student/index" component={StudentIndex} />
     <Route exact path="/lecturer/index" component={LecturerIndex} />
+    <Route exact path="/lecturer/grading" component={grading}/>
+    <Route exact path="/lecturer/history" component={history}/>
     <Route component={NotFound} />
   </Switch>
 )
