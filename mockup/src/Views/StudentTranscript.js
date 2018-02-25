@@ -23,7 +23,7 @@ class StudentTranscript extends Component {
                                 <h1 className="has-text-centered is-size-4 has-text-weight-bold">Current semester summary</h1>
                                 <StudentGradeSum enrolled="19" recv="16" gpa="3.43" />
                                 <h1 className="has-text-centered is-size-4 has-text-weight-bold">All semesters summary</h1>
-                                <StudentGradeSum enrolled="96" recv="96" gpa="3.41" />
+                                <StudentGradeSum enrolled="96" recv="93" gpa="3.41" />
                                 <hr />
                                 <h1 className="has-text-centered is-size-4 has-text-weight-bold">Grading Result</h1>
                                 <StudentGradeResult />

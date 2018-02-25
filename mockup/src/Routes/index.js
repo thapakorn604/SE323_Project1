@@ -9,6 +9,7 @@ import LecturerIndex from '../Views/LecturerIndex';
 import StudentTranscript from '../Views/StudentTranscript';
 import StudentPayment from '../Views/StudentPayment';
 import StudentEnroll from '../Views/StudentEnroll';
+import AdminAddCourse from '../Views/AdminAddCourse';
 
 
 export default () => (
@@ -16,6 +17,7 @@ export default () => (
     <Route exact path="/" component={Login} />
     <Route exact path="/admin" component={AdminLogin} />
     <Route exact path="/admin/index" component={AdminIndex} />
+    <Route exact path="/admin/addcourse" component={AdminAddCourse} />
     <Route exact path="/student/index" component={StudentIndex} />
     <Route exact path="/student/transcript" component={StudentTranscript} />
     <Route exact path="/student/payment" component={StudentPayment} />

@@ -37,7 +37,7 @@ class StudentPayment extends Component {
                 </Box>
                 <Field groupedCentered>
                                 <div class="control">
-                                    <button class="button is-info">Print Payment slip</button>
+                                    <button class="button is-info">Print Bill Payment</button>
                                 </div>
                                 <div class="control">
                                     <button class="button">Pay with Credit/Debit card</button>
