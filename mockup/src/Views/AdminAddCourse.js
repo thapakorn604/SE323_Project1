@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import AdminNav from '../Views/AdminNav'
 import { Button, Box } from 'reactbulma'
+import {Redirect} from 'react-router-dom'
 
 class AdminAddCourse extends Component {
     constructor(props) {
@@ -13,13 +14,13 @@ class AdminAddCourse extends Component {
 
     handleSubmit() {
         if (window.confirm("Are you sure to add this course") == true) {
-            window.alert("Successfully added!")
-            window.location.replace('/admin/index')
+            window.alert("Successfully added!");
+            <Redirect to='/admin/index'/> 
         }
     }
 
     handleCancel() {
-        window.location.replace('/admin/index')
+        <Redirect to='/admin/index' />
     }
 
     render() {
