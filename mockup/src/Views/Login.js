@@ -21,7 +21,7 @@ class Login extends Component {
     }
     handleSignIn() {
         let checker = this.state.type
-        checker === 'Student' ? <Redirect to='/student/index' /> : <Redirect to='/lecturer/index' />
+        checker === 'Student' ? <Redirect to={{pathname: '/student/index'}} /> : <Redirect to='/lecturer/index' />
     }
 
     render() {
