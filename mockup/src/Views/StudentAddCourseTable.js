@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Button } from 'reactbulma'
-import {Redirect} from 'react-router-dom'
 
 class StudentAddCourseTable extends Component {
     constructor(props) {
@@ -9,7 +8,7 @@ class StudentAddCourseTable extends Component {
     }
     handleAdd() {
         if (window.confirm('Are you sure to add this course ?') == true) {
-            <Redirect to='/student/index' />
+            window.location.replace('/student/index')
         }
     }
     render() {

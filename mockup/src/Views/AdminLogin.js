@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { Card, Field, Container } from "reactbulma"
 import Style from './style.css'
 import EmptyNav from './EmptyNav'
-import {Redirect} from 'react-router-dom'
 
 class AdminLogin extends Component {
     constructor(props) {
@@ -18,7 +17,7 @@ class AdminLogin extends Component {
         this.setState({ type: event.target.value })
     }
     handleSignIn() {
-        <Redirect to='/admin/index' />
+        window.location.replace("/admin/index")
     }
 
     render() {

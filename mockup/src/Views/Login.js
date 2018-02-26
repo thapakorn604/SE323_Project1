@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { Card, Field, Container } from "reactbulma"
 import Style from './style.css'
 import EmptyNav from './EmptyNav'
-import {Redirect} from 'react-router-dom'
 
 class Login extends Component {
     constructor(props) {
@@ -21,7 +20,11 @@ class Login extends Component {
     }
     handleSignIn() {
         let checker = this.state.type
+<<<<<<< HEAD
         checker === 'Student' ? <Redirect to={{pathname: '/student/index'}} /> : <Redirect to='/lecturer/index' />
+=======
+        checker === 'Student' ? window.location.replace('/student/index') : window.location.replace('/lecturer/index')
+>>>>>>> parent of 05fa833... add redirect
     }
 
     render() {

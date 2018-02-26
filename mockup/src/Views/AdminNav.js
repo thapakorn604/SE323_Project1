@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
 import { Button } from 'reactbulma'
-import {Redirect} from 'react-router-dom'
 
 class AdminNav extends Component {
     constructor(props) {
@@ -12,7 +11,7 @@ class AdminNav extends Component {
     }
 
     handleLogout() {
-        <Redirect to='/admin' />
+        window.location.replace("/admin")
     }
     render() {
         return (
