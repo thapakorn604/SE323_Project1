@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-
-class LecturerGradingSum extends Component {
+class summary extends Component {
     constructor(props) {
         super(props);
         this.state = {}
@@ -25,4 +24,4 @@ class LecturerGradingSum extends Component {
     }
 }
 
-export default LecturerGradingSum;
+export default summary;
