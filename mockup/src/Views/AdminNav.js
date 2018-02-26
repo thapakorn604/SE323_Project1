@@ -31,7 +31,6 @@ class AdminNav extends Component {
                         <div className="navbar-menu" id="menu">
                             <div className="navbar-start">
                                 <NavLink to="/admin/addcourse" activeClassName="is-active" className="navbar-item">Add Course</NavLink>
-                                <NavLink to="/admin/manage" activeClassName="is-active" className="navbar-item">Semester Management</NavLink>
                             </div>
                             <div className="navbar-end">
                                 <div className="navbar-item">

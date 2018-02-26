@@ -1,6 +1,5 @@
 .authen{
     background-color: rgb(88, 194, 162);
-    margin-top: 10%;
     padding:5%;
 }
 .is-padding{
@@ -11,6 +10,7 @@
     justify-content: center;
   }
 
+
 .center-table th {
     text-align: center;
     vertical-align: middle;
@@ -20,3 +20,12 @@
     text-align: center;
     vertical-align: middle;
 }
+
+  .is-inline {
+      display: inline;
+  }
+
+  #is-green {
+      background-color: rgb(181, 194, 181);
+  }
+
