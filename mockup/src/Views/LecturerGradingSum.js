@@ -17,7 +17,7 @@ class LecturerGradingSum extends Component {
                 <div className="level-item has-text-centered">
                     <div>
                         <p className="heading">Summary Grade</p>
-                        <p className="title">3.99</p>
+                        <p className="title">3.88</p>
                     </div>
                 </div>
             </nav>
