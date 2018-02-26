@@ -9,7 +9,7 @@ class LecturerHistoryTable extends React.Component {
   render() {
     return <div>
         <table className="table is-fullwidth">
-            <tr className="has-text-centered">
+            <tr className="center-table">
                 <th>No.</th>
                 <th>Course ID</th>
                 <th>Course Name</th>
@@ -17,6 +17,7 @@ class LecturerHistoryTable extends React.Component {
                 <th>Time</th>
                 <th>Credit(s)</th>
                 <th>Semester</th>
+                <th>Summary GPA</th>
             </tr>
             <tr>
                 <td>1</td>
@@ -26,6 +27,7 @@ class LecturerHistoryTable extends React.Component {
                 <td>09.30-12.00</td>
                 <td>3</td> 
                 <td>2/60</td>
+                <td>3.55</td>
             </tr>
             <tr>
                 <td>2</td>
@@ -35,6 +37,7 @@ class LecturerHistoryTable extends React.Component {
                 <td>12.30-14.30</td>
                 <td>3</td> 
                 <td>2/60</td>
+                <td>3.99</td>
             </tr>
         </table>
     </div>
