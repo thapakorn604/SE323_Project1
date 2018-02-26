@@ -3,6 +3,7 @@ import LecturerNav from './LecturerNav';
 import ADT from './ADT';
 import { Box } from 'reactbulma';
 import Database from './Database';
+import Summary from './summary';
 
 class grading extends Component {
     constructor(props) {
@@ -20,14 +21,14 @@ class grading extends Component {
                         <div className="columns">
                             <div className="column is-one-third">
                                 <Box>
-                                <p class="panel-heading">Course</p>
+                                <p className="panel-heading">Course</p>
                                     <div>
-                                        <a class="panel-block is-active">
-                                            <span class="panel-icon"></span>
+                                        <a className="panel-block is-active">
+                                            <span className="panel-icon"></span>
                                             953102
                                         </a>
-                                        <a class="panel-block">
-                                            <span class="panel-icon"></span>
+                                        <a className="panel-block">
+                                            <span className="panel-icon"></span>
                                             953212
                                         </a>
                                     </div>
@@ -38,6 +39,7 @@ class grading extends Component {
                                     <ADT />
                                 </Box>
                                 <Box>
+                                <Summary />
                                 </Box>
                                 {/* <Box><Database/></Box> */}
                             </div>
