@@ -11,14 +11,14 @@ class AdminAddCourse extends Component {
         this.handleCancel = this.handleCancel.bind(this)
     }
 
-    handleSubmit(){
-        if(window.confirm("Are you sure to add this course")==true){
+    handleSubmit() {
+        if (window.confirm("Are you sure to add this course") == true) {
             window.alert("Successfully added!")
             window.location.replace('/admin/index')
         }
     }
-    
-    handleCancel(){
+
+    handleCancel() {
         window.location.replace('/admin/index')
     }
 
@@ -54,7 +54,7 @@ class AdminAddCourse extends Component {
                                     <label className="label">Lecturer(s)</label>
                                     <div className="control">
                                         <input className="input" type="text" placeholder="e.g. Thapakorn Tuwaemuesa,Thanawat Lukuan"></input>
-                                        <p className="help is-info">*If the courese has more than 1 lecturer, use comma(,) to separate each lecturer name.*</p>
+                                        <p className="help is-info">**If the courese has more than 1 lecturer, use comma(,) to separate each lecturer name.</p>
                                     </div>
                                 </div>
                             </div>
@@ -93,7 +93,7 @@ class AdminAddCourse extends Component {
                         </div>
                         <div className="field is-grouped is-grouped-centered">
                             <div className="control">
-                                <button className="button is-success"onClick={this.handleSubmit}>Submit</button>
+                                <button className="button is-success" onClick={this.handleSubmit}>Submit</button>
                             </div>
                             <div className="control">
                                 <button className="button is-danger" onClick={this.handleCancel}>Cancel</button>

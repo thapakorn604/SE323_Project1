@@ -1,27 +1,26 @@
 import React, { Component } from 'react';
 import LecturerNav from './LecturerNav';
-import ADT from './ADT';
+import LecturerGradingTable from '../Views/LecturerGradingTable';
 import { Box } from 'reactbulma';
-import Database from './Database';
-import Summary from './summary';
+import LecturerGradingSum from '../Views/LecturerGradingSum';
 
-class grading extends Component {
+class LecturerGrading extends Component {
     constructor(props) {
         super(props);
-        this.state = { }
+        this.state = {}
     }
 
 
-    render() { 
+    render() {
         return (
             <div>
-            <LecturerNav/>
-            <section className="section">
+                <LecturerNav />
+                <section className="section">
                     <div className="container">
                         <div className="columns">
                             <div className="column is-one-third">
                                 <Box>
-                                <p className="panel-heading">Course</p>
+                                    <p className="panel-heading">Course</p>
                                     <div>
                                         <a className="panel-block is-active">
                                             <span className="panel-icon"></span>
@@ -36,19 +35,18 @@ class grading extends Component {
                             </div>
                             <div className="column">
                                 <Box>
-                                    <ADT />
+                                    <LecturerGradingTable />
                                 </Box>
                                 <Box>
-                                <Summary />
+                                    <LecturerGradingSum />
                                 </Box>
-                                {/* <Box><Database/></Box> */}
                             </div>
                         </div>
                     </div>
                 </section>
             </div>
-         )
+        )
     }
 }
- 
-export default grading;
+
+export default LecturerGrading;
