@@ -6,10 +6,13 @@ import AdminIndex from '../Views/AdminIndex'
 import StudentIndex from '../Views/StudentIndex'
 import NotFound from '../Views/NotFound'
 import LecturerIndex from '../Views/LecturerIndex';
+import LecturerGrading from '../Views/grading';
+import LecturerHistory from '../Views/history';
 import StudentTranscript from '../Views/StudentTranscript';
 import StudentPayment from '../Views/StudentPayment';
 import StudentEnroll from '../Views/StudentEnroll';
 import AdminAddCourse from '../Views/AdminAddCourse';
+
 
 
 export default () => (
@@ -23,6 +26,8 @@ export default () => (
     <Route exact path="/student/payment" component={StudentPayment} />
     <Route exact path="/student/enroll" component={StudentEnroll} />
     <Route exact path="/lecturer/index" component={LecturerIndex} />
+    <Route exact path="/lecturer/grading" component={LecturerGrading}/>
+    <Route exact path="/lecturer/history" component={LecturerHistory}/>
     <Route component={NotFound} />
   </Switch>
 )
