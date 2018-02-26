@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import LecturerNav from './LecturerNav';
-import ADT from './ADT';
+import LecturerGradingTable from './LecturerGradingTable';
 import { Box } from 'reactbulma';
-import Database from './Database';
-import Summary from './summary';
+import LecturerGradingSum from './LecturerGradingSum';
 
-class grading extends Component {
+class LecturerGrading extends Component {
     constructor(props) {
         super(props);
         this.state = { }
@@ -36,12 +35,11 @@ class grading extends Component {
                             </div>
                             <div className="column">
                                 <Box>
-                                    <ADT />
+                                    <LecturerGradingTable />
                                 </Box>
                                 <Box>
-                                <Summary />
+                                <LecturerGradingSum />
                                 </Box>
-                                {/* <Box><Database/></Box> */}
                             </div>
                         </div>
                     </div>
@@ -51,4 +49,4 @@ class grading extends Component {
     }
 }
  
-export default grading;
+export default LecturerGrading;

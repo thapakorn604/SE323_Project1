@@ -6,8 +6,8 @@ import AdminIndex from '../Views/AdminIndex'
 import StudentIndex from '../Views/StudentIndex'
 import NotFound from '../Views/NotFound'
 import LecturerIndex from '../Views/LecturerIndex';
-import LecturerGrading from '../Views/grading';
-import LecturerHistory from '../Views/history';
+import LecturerGrading from '../Views/LecturerGrading';
+import LecturerHistory from '../Views/LecturerHistory';
 import StudentTranscript from '../Views/StudentTranscript';
 import StudentPayment from '../Views/StudentPayment';
 import StudentEnroll from '../Views/StudentEnroll';

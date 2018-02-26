@@ -20,11 +20,7 @@ class Login extends Component {
     }
     handleSignIn() {
         let checker = this.state.type
-<<<<<<< HEAD
-        checker === 'Student' ? <Redirect to={{pathname: '/student/index'}} /> : <Redirect to='/lecturer/index' />
-=======
         checker === 'Student' ? window.location.replace('/student/index') : window.location.replace('/lecturer/index')
->>>>>>> parent of 05fa833... add redirect
     }
 
     render() {

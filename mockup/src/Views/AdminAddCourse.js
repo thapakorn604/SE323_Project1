@@ -11,7 +11,6 @@ class AdminAddCourse extends Component {
         this.handleCancel = this.handleCancel.bind(this)
     }
 
-<<<<<<< HEAD
     handleSubmit() {
         if (window.confirm("Are you sure to add this course") == true) {
             window.alert("Successfully added!")
@@ -19,10 +18,6 @@ class AdminAddCourse extends Component {
         }
     }
 
-    handleCancel() {
-<<<<<<< HEAD
-        <Redirect to='/admin/index' />
-=======
     handleSubmit(){
         if(window.confirm("Are you sure to add this course")==true){
             window.alert("Successfully added!")
@@ -32,12 +27,7 @@ class AdminAddCourse extends Component {
     
     handleCancel(){
         window.location.replace('/admin/index')
->>>>>>> parent of c0e2831... improve lecturer part
-=======
-        window.location.replace('/admin/index')
->>>>>>> parent of 05fa833... add redirect
     }
-
     render() {
         return (
             <div>
