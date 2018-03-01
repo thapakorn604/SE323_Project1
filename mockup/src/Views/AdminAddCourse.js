@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import AdminNav from '../Views/AdminNav'
 import { Button, Box } from 'reactbulma'
+import Style from '../Views/style.css'
 
 class AdminAddCourse extends Component {
     constructor(props) {
@@ -18,14 +19,14 @@ class AdminAddCourse extends Component {
         }
     }
 
-    handleSubmit(){
-        if(window.confirm("Are you sure to add this course")==true){
+    handleSubmit() {
+        if (window.confirm("Are you sure to add this course") == true) {
             window.alert("Successfully added!")
             window.location.replace('/admin/index')
         }
     }
-    
-    handleCancel(){
+
+    handleCancel() {
         window.location.replace('/admin/index')
     }
     render() {
@@ -55,28 +56,12 @@ class AdminAddCourse extends Component {
                             </div>
                         </div>
                         <div className="columns">
-                            <div className="column is-half">
+                            <div className="column is-7">
                                 <div className="field">
                                     <label className="label">Lecturer(s)</label>
                                     <div className="control">
                                         <input className="input" type="text" placeholder="e.g. Thapakorn Tuwaemuesa,Thanawat Lukuan"></input>
                                         <p className="help is-info">*If the courese has more than 1 lecturer, use comma(,) to separate each lecturer name.*</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="column">
-                                <div className="field">
-                                    <label className="label">Semester(s)</label>
-                                    <div className="control">
-                                        <div className="select select">
-                                            <select>
-                                                <option>1/2560</option>
-                                                <option>2/2560</option>
-                                                <option>3/2560</option>
-                                                <option>Only 1&2/2560</option>
-                                                <option>All of Academic year 2560</option>
-                                            </select>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -97,9 +82,71 @@ class AdminAddCourse extends Component {
                                 </div>
                             </div>
                         </div>
+                        <div className="columns">
+                            <div className="column is-half">
+                                <label className="label">Day(s)</label>
+                                <label class="checkbox">
+                                    <input type="checkbox"></input>
+                                    Monday &nbsp;
+                            </label>
+                                <label class="checkbox">
+                                    <input type="checkbox"></input>
+                                    Tuesday &nbsp;
+                            </label>
+                                <label class="checkbox">
+                                    <input type="checkbox"></input>
+                                    Wednesday &nbsp;
+                            </label>
+                                <label class="checkbox">
+                                    <input type="checkbox"></input>
+                                    Thursday &nbsp;
+                            </label>
+                                <label class="checkbox">
+                                    <input type="checkbox"></input>
+                                    Friday &nbsp;
+                            </label>
+                                <label class="checkbox">
+                                    <input type="checkbox"></input>
+                                    Saturday &nbsp;
+                            </label>
+                                <label class="checkbox">
+                                    <input type="checkbox"></input>
+                                    Sunday &nbsp;
+                            </label>
+                            </div>
+                            <div className="column is-3">
+                                <label className="label">Time</label>
+                                <div className="field is-grouped">
+                                    <div className="control">
+                                        <p className="is-inline">Form : </p>
+                                        <input className="input is-inline" type="time"></input>
+                                    </div>
+                                    <div className="control">
+                                        <p className="is-inline">To : </p>
+                                        <input className="input is-inline" type="time"></input>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="column">
+                                <div className="field">
+                                    <label className="label">Semester(s)</label>
+                                    <div className="control is-expanded">
+                                        <div className="select is-fullwidth">
+                                            <select>
+                                                <option>1/2560</option>
+                                                <option>2/2560</option>
+                                                <option>3/2560</option>
+                                                <option>Only 1&2/2560</option>
+                                                <option>All of Academic year 2560</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div className="field is-grouped is-grouped-centered">
                             <div className="control">
-                                <button className="button is-success"onClick={this.handleSubmit}>Submit</button>
+                                <button className="button is-success" onClick={this.handleSubmit}>Submit</button>
                             </div>
                             <div className="control">
                                 <button className="button is-danger" onClick={this.handleCancel}>Cancel</button>

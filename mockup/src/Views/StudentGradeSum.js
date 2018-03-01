@@ -16,7 +16,7 @@ class StudentGradeSum extends Component {
                 </div>
                 <div class="level-item has-text-centered">
                     <div>
-                        <p class="heading">Recieved Credits</p>
+                        <p class="heading">Received Credits</p>
                         <p class="title">{this.props.recv}</p>
                     </div>
                 </div>
