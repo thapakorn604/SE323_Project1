@@ -8,19 +8,38 @@ class Login extends Component {
         super(props)
 
         this.state = {
-            type: "Student"
+            type: "Student",
+            account: '',
+            password: ''
         }
 
         this.handleChange = this.handleChange.bind(this)
         this.handleSignIn = this.handleSignIn.bind(this)
+        this.handleAccount = this.handleAccount.bind(this)
+        this.handlePassword = this.handlePassword.bind(this)
     }
 
     handleChange(event) {
         this.setState({ type: event.target.value })
     }
-    handleSignIn() {
-        let checker = this.state.type
-        checker === 'Student' ? window.location.replace('/student/index') : window.location.replace('/lecturer/index')
+    handleAccount(event) {
+        this.setState({account:event.target.value})
+    }
+    handlePassword(event){
+        this.setState({password: event.target.value})
+    }
+    handleSignIn(event) {
+        let type = this.state.type
+        let account = this.state.account
+        let password = this.state.password
+        //checker === 'Student' ? window.location.replace('/student/index') : window.location.replace('/lecturer/index')
+        if(type ==='Student'&& account==='student'&&password==='student'){
+            window.location.replace('/student/index')
+        }else if(type==='Lecturer'&&account==='lecturer'&&password==='lecturer'){
+            window.location.replace('/lecturer/index')
+        }else{
+            window.alert('You put wrong account, password or left it blank, please try again')
+        }
     }
 
     render() {
@@ -39,15 +58,15 @@ class Login extends Component {
                         <Card className="is-padding">
                             <Container fluid>
                                 <Field>
-                                    <label class="label">Account</label>
-                                    <div class="control">
-                                        <input className="input" type="text" placeholder="e-mail e.g. xxx@cmu.ac.th"></input>
+                                    <label className="label">Account</label>
+                                    <div className="control">
+                                        <input className="input" type="text" value={this.state.account} onChange={this.handleAccount} placeholder="e-mail e.g. xxx@cmu.ac.th"></input>
                                     </div>
                                 </Field>
                                 <Field>
-                                    <label class="label">Password</label>
-                                    <div class="control">
-                                        <input className="input" type="password"></input>
+                                    <label className="label">Password</label>
+                                    <div className="control">
+                                        <input className="input" value={this.state.password} onChange={this.handlePassword} type="password"></input>
                                     </div>
                                 </Field>
                                 <Field>
@@ -62,11 +81,11 @@ class Login extends Component {
                                     </div>
                                 </Field>
                                 <Field groupedCentered>
-                                    <div class="control">
-                                        <button class="button is-primary" onClick={this.handleSignIn}>Sign in</button>
+                                    <div className="control">
+                                        <button className="button is-primary" onClick={this.handleSignIn}>Sign in</button>
                                     </div>
-                                    <div class="control">
-                                        <button class="button is-text">Cancel</button>
+                                    <div className="control">
+                                        <button className="button is-text">Cancel</button>
                                     </div>
                                 </Field>
                             </Container>
