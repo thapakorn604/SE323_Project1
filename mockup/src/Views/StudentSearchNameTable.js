@@ -5,6 +5,8 @@ class StudentSearchNameTable extends Component {
     constructor(props) {
         super(props);
         this.state = {}
+
+        this.handleAdd = this.handleAdd.bind(this)
     }
     handleAdd() {
         if (window.confirm('Are you sure to add this course ?') == true) {
@@ -29,7 +31,7 @@ class StudentSearchNameTable extends Component {
                         </tr>
                     </thead>
                     <tr>
-                        <td></td>
+                        <td>222100</td>
                         <td>Tennis for life and exercise</td>
                         <td>Lect.Pakorn Tuisry</td>
                         <td>1</td>

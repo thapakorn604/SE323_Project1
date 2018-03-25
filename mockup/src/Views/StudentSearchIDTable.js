@@ -5,6 +5,8 @@ class StudentSearchIDTable extends Component {
     constructor(props) {
         super(props);
         this.state = {}
+
+        this.handleAdd = this.handleAdd.bind(this)
     }
     handleAdd() {
         if (window.confirm('Are you sure to add this course ?') == true) {
