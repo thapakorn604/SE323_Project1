@@ -81,7 +81,7 @@ class AdminAddCourse extends Component {
             window.alert("Successfully added!")
             window.location.replace('/admin/index')
             }else{
-                window.alert("Plase do not left the form blank or input wrong format, please try again.")
+                window.alert("Please do not left the form blank or input wrong format, please try again.")
             }
         }
     }

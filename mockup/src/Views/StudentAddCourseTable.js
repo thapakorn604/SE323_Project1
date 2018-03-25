@@ -5,10 +5,19 @@ class StudentAddCourseTable extends Component {
     constructor(props) {
         super(props);
         this.state = {}
+
+        this.handleAdd = this.handleAdd.bind(this)
+        this.handleExtraCredit = this.handleExtraCredit.bind(this)
     }
     handleAdd() {
         if (window.confirm('Are you sure to add this course ?') == true) {
+            window.alert("Successfully enrolled!")
             window.location.replace('/student/index')
+        }
+    }
+    handleExtraCredit(){
+        if (window.confirm('Are you sure to add this course ?') == true) {
+            window.alert("Sorry, Your remaining credit is not enough to enroll.")
         }
     }
     render() {
@@ -48,7 +57,7 @@ class StudentAddCourseTable extends Component {
                         <td>8.00 - 9.30</td>
                         <td>45</td>
                         <td>42</td>
-                        <td><Button primary>ADD</Button></td>
+                        <td><Button primary onClick={this.handleExtraCredit}>ADD</Button></td>
                     </tr>
                     <tr>
                         <td>953202</td>
