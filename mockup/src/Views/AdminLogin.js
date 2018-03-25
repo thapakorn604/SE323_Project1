@@ -8,16 +8,29 @@ class AdminLogin extends Component {
         super(props)
 
         this.state = {
-            type: "Admin"
+            identity: '',
+            password: ''
         }
         this.handleSignIn = this.handleSignIn.bind(this)
+        this.handleIdentity = this.handleIdentity.bind(this)
+        this.handlePassword = this.handlePassword.bind(this)
     }
 
-    handleChange(event) {
-        this.setState({ type: event.target.value })
+    handleIdentity(event) {
+        this.setState({ identity: event.target.value })
+    }
+    handlePassword(event) {
+        this.setState({ password: event.target.value })
     }
     handleSignIn() {
-        window.location.replace("/admin/index")
+        let identity = this.state.identity
+        let password = this.state.password
+
+        if(identity==='admin'&&password==='admin'){
+            window.location.replace("/admin/index")
+        }else{
+            window.alert('You put wrong account, password or left it blank, please try again')
+        }
     }
 
     render() {
@@ -36,23 +49,23 @@ class AdminLogin extends Component {
                         <Card className="is-padding">
                             <Container fluid>
                                 <Field>
-                                    <label class="label">Identity</label>
-                                    <div class="control">
-                                        <input className="input" type="text" placeholder="Admin ID e.g.582115015"></input>
+                                    <label className="label">Identity</label>
+                                    <div className="control">
+                                        <input className="input" value={this.state.identity} onChange={this.handleIdentity} type="text" placeholder="Admin ID e.g.582115015"></input>
                                     </div>
                                 </Field>
                                 <Field>
-                                    <label class="label">Password</label>
-                                    <div class="control">
-                                        <input className="input" type="password"></input>
+                                    <label className="label">Password</label>
+                                    <div className="control">
+                                        <input className="input" value={this.state.password} onChange={this.handlePassword} type="password"></input>
                                     </div>
                                 </Field>
                                 <Field groupedCentered>
-                                    <div class="control">
-                                        <button class="button is-primary" onClick={this.handleSignIn}>Sign in</button>
+                                    <div className="control">
+                                        <button className="button is-primary" onClick={this.handleSignIn}>Sign in</button>
                                     </div>
                                     <div class="control">
-                                        <button class="button is-text">Cancel</button>
+                                        <button className="button is-text">Cancel</button>
                                     </div>
                                 </Field>
                             </Container>

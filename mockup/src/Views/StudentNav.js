@@ -9,7 +9,9 @@ class StudentNav extends Component {
     }
 
     handleLogout(){
-        window.location.replace('/')
+        if(window.confirm('Are you sure you want to log out?')){
+            window.location.replace('/')
+        }
     }
 
     render() {

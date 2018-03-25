@@ -10,7 +10,9 @@ class LecturerNav extends Component {
         this.handleLogout = this.handleLogout.bind(this)
     }
     handleLogout(){
-        window.location.replace('/')
+        if(window.confirm('Are you sure you want to log out?')){
+            window.location.replace('/')
+        }
     }
 
     render() {

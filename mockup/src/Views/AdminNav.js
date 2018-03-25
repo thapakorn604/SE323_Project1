@@ -11,7 +11,9 @@ class AdminNav extends Component {
     }
 
     handleLogout() {
-        window.location.replace("/admin")
+        if(window.confirm('Are you sure you want to log out?')){
+            window.location.replace('/admin')
+        }
     }
     render() {
         return (

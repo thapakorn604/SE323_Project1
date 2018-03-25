@@ -60,7 +60,7 @@ class Login extends Component {
                                 <Field>
                                     <label className="label">Account</label>
                                     <div className="control">
-                                        <input className="input" type="text" value={this.state.account} onChange={this.handleAccount} placeholder="e-mail e.g. xxx@cmu.ac.th"></input>
+                                        <input className="input" type="text" value={this.state.account} onChange={this.handleAccount} placeholder="username e.g.studentacc"></input>
                                     </div>
                                 </Field>
                                 <Field>
